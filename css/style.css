@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica,;
+} 
+
+body{
+    background-color: #c5e4e7;
+    padding: 10rem;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    position: relative;
+    bottom: 2rem;
+    color: #4b6e70;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.body{
+    background-color: white;
+    border-radius: 10px;
+    width: 84%;
+    position: relative;
+    left: 3rem;
+}
+
+main{
+    display: flex;
+    gap: 4rem;
+    padding: 1rem;
+    padding-right: 5px;
+}
+
+label{
+    color:#819799;
+    font-size: 0.6em;
+    letter-spacing: 2px;
+}
+
+.main-2{
+    background-color: #00474b;
+    border-radius: 10px;
+    padding: 1.5rem;
+    position: relative;
+    right: 3.3rem;
+}
+
+.percent-box button{
+    background: #00474b;
+    border: transparent;
+    border-radius: 3px;
+    padding: 5px 1rem;
+    color: #b6d7da;
+    font-weight: 700;
+}
+
+.percent-box input{
+    background: #f2feff;
+    text-align: center;
+}
+
+.fs{
+    margin: auto 2px;
+}
+
+.main-sec1{
+    display: flex;
+    gap: 4.2rem;
+}
+
+.main-sec2{
+    display: flex;
+    gap: 6.3rem;
+}
+
+.main-2 button{
+    padding: 5px 5rem;
+    margin-top: 3.5rem;
+    background-color: #0d686d;
+    border: 2px solid #0d686d;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.percentages{
+    margin: 1.3rem auto;
+}
+
+.per{
+    margin-top: 0.3rem;
+}
+
+input{
+    height: 1.5rem;
+    width: 18em;
+    text-align: end;
+    border: transparent;
+    background: #e9fdff;
+    /* padding: 0.5rem 0.4rem; */
+    cursor: pointer;
+}
+
