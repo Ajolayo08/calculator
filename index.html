@@ -11,25 +11,26 @@
         <span>SPLI</span>
             <span>TTER<span>
     </header>
+    <p class="error"></p>
     <div class="body">
         <main>
             <div class="main-1">
                 <div class="calculations">
                     <label for="caculations" id="calculations">Bill</label>
                     <br>
-                    <input type="text" id="calculations" placeholder="0">
+                    <input type="number" id="calculation" placeholder="0">
                 </div>
                 <div class="percentages">
                     <label for="percentages">Select Tip %</label>
                     <br>
                     <div class="percent-box">
-                       <button style="width: 5em;">5%</button>
-                       <button class="fs" style="width: 5em;">10%</button>
-                       <button style="width: 5em;">15%</button>
+                       <button style="width: 5em;" onclick="calculateTip(5)">5%</button>
+                       <button class="fs" style="width: 5em;" onclick="calculateTip(10)">10%</button>
+                       <button style="width: 5em;" onclick="calculateTip(15)">15%</button>
                         <br>
                         <div class="per">
-                        <button style="width: 5em;">25%</button>
-                        <button class="fs" style="width: 5em;">50%</button>
+                        <button style="width: 5em;" onclick="calculateTip(25)">25%</button>
+                        <button class="fs" style="width: 5em;" onclick="calculateTip(50)">50%</button>
                         <input type="text" class="custom" placeholder="Custom" style="width: 5em; height: 1.8rem;">
                         </div>
                     </div>
@@ -37,7 +38,7 @@
                 <div class="numbers">
                     <label for="number">Number of People</label>
                     <br>
-                    <input type="text" id="number" placeholder="0">
+                    <input type="number" id="number" placeholder="0">
                 </div>
             </div>
 
@@ -47,18 +48,20 @@
                         <h2 style="color: #c1dfe2; font-size: 1em; font-weight: 200;">Tip amount</h2>
                         <p style="white-space: nowrap; color: #48787c; font-size: 0.8em;">/ person</p>
                     </div>
-                        <h1 style="color: #23c4ae; font-size: 2em;">$0.00</h1>     
+                        <h1 style="color: #23c4ae; font-size: 2em;">$ <span class="totalTipPerPerson">0.00</span></h1>     
                 </div>   
                 <div class="main-sec2">          
                     <div class="main-2b">
                         <h2 style="color: #c1dfe2; font-size: 1em; font-weight: 200;">Total</h2>
                         <p style="white-space: nowrap; color: #48787c; font-size: 0.8em;">/ person</p>
                     </div>
-                    <h1 style="color: #23c4ae; font-size: 2em;">$0.00</h1>
+                    <h1 style="color: #23c4ae; font-size: 2em;">$ <span class="totalPerPerson">0.00</span></h1>
                 </div>
-                <button style="color: #00474B; font-weight: 800;">RESET</button>
+                <button style="color: #00474B; font-weight: 800;" class="reset">RESET</button>
             </div>
         </main>
     </div>
+    <script src="./js/test.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

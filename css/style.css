@@ -23,6 +23,14 @@ header{
     letter-spacing: 4px;
 }
 
+.error{
+    padding: 10px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
 .body{
     background-color: white;
     border-radius: 10px;
